@@ -11,7 +11,7 @@ export const Cards = ({ url, nameproject, description }) => {
           className=" w-full h-72 border "
         />
         <div className=" text-start mt-3 ">
-          <h2 className=" font-bold mb-3 ">{nameproject}</h2>
+          <h2 className=" font-bold mb-2 ">{nameproject}</h2>
           <p className=" text-gray-400 ">{description}</p>
           <ButtonGroup url={url} />
         </div>

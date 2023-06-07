@@ -24,7 +24,7 @@ const ButtonGroup = ({ onButtonCV, onButtonGmail, cv, gmail, url }) => {
           href={url}
           target="_blank"
           rel="noreferrer"
-          className=" border-blue-500 hover:bg-blue-700 hover:text-white text-blue-500 border text-lg text-center font-bold my-3 py-4 w-40 md:w-48 mt-5 rounded-full bg-transparent inline-block"
+          className=" border-blue-500 hover:bg-blue-700 hover:text-white text-blue-500 border text-lg text-center font-bold my-3 py-2 w-44 md:w-48 mt-5 rounded-full bg-transparent inline-block"
         >
           Visit the website
         </a>
