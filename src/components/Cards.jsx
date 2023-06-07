@@ -8,11 +8,11 @@ export const Cards = ({ url, nameproject, description }) => {
         <iframe
           src={url}
           title={nameproject}
-          className=" w-full h-72 border "
+          className=" w-full h-72 rounded-lg border "
         />
         <div className=" text-start mt-3 ">
-          <h2 className=" font-bold mb-2 ">{nameproject}</h2>
-          <p className=" text-gray-400 ">{description}</p>
+          <h2 className=" text-lg font-bold mb-2 ">{nameproject}</h2>
+          <p className=" text-gray-400 text-base ">{description}</p>
           <ButtonGroup url={url} />
         </div>
       </div>

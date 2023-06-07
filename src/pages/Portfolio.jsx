@@ -23,9 +23,9 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className=" space-y-10 ">
+      <section className=" space-y-6 ">
         {/* Sección de los botones */}
-        <div className=" flex flex-row md:space-x-4 justify-center mt-8 ">
+        <div className=" flex flex-row md:space-x-4 justify-center mt-5 ">
           <ButtonGroup onButtonCV={handleDownloadCVClick} cv={"DOWNLOAD CV"} />
           <ButtonGroup
             onButtonGmail={handleGetInTouchClick}
@@ -65,7 +65,7 @@ export default function Portfolio() {
               url={rickandmorty}
               nameproject={"RICK & MORTY"}
               description={
-                "Embark on a captivating journey through the fascinating universe of this beloved animated series as you explore character profiles seamlessly connected to our API."
+                "Embark on a captivating journey through the universe of this beloved animated series as you explore character profiles seamlessly connected to an API."
               }
             />
           </div>
