@@ -10,13 +10,22 @@ export default function About() {
   const percentageJavaScript = 80;
   const percentageTailwind = 85;
   const percentageReactBootstrap = 75;
-  const percentageGitHubGit = 70;
+  const percentageGitHubGit = 80;
   const percentageJSON = 75;
   const percentageFigma = 70;
   const percentageRWD = 80;
 
+  const handleGetInTouchClick = () => {
+    const email = "lunox.code@gmail.com";
+    const subject = "Hello Moises! I would like to get in touch with you";
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+
+    // Redirige al enlace de Gmail
+    window.location.href = mailtoLink;
+  };
+
   return (
-    <div>
+    <>
       <section className=" grid grid-cols-1 md:grid-cols-2 p-5 md:m-5 ">
         {/* Sección de la imagen */}
         <figure>
@@ -24,9 +33,9 @@ export default function About() {
         </figure>
 
         {/* Sección del contenido */}
-        <section className=" order-2 md:order-1 space-y-4 mt-10 mb-5 md:mt-0 md:space-y-6 md:mr-10 text-center leading-normal tracking-tight ">
+        <div className=" order-2 md:order-1 space-y-4 mt-10 mb-5 md:mt-0 md:space-y-6 md:mr-10 text-center leading-normal tracking-tight ">
           {/* Sección del I AM */}
-          <section className="space-y-3 ">
+          <div className="space-y-3 ">
             <h1>
               <span className=" font-bold text-2xl text-blue-600">{"< "}</span>
               ABOUT ME
@@ -35,14 +44,18 @@ export default function About() {
             <p className=" font-bold ">
               I design and code beautiful things, and I love what I do
             </p>
-          </section>
+          </div>
 
           {/* Information About */}
-          <section className=" grid grid-cols-2 ">
+          <div className=" grid grid-cols-2 ">
             <InfoAbout info={"NAME"} description={"Moisés Obando"} />
             <InfoAbout info={"AGE"} description={"30 years old"} />
-            <InfoAbout info={"WHATSAPP"} description={"+57 314-6252639"} />
-            <InfoAbout info={"EMAIL"} description={"lunox.code@gmail.com"} />
+            <InfoAbout info={"WHATSAPP"} wa={"+57 314-6252639"} />
+            <InfoAbout
+              info={"EMAIL"}
+              email={"lunox.code@gmail.com"}
+              onButtonGmail={handleGetInTouchClick}
+            />
             <InfoAbout info={"NATIONALITY"} description={"Costa Rican"} />
             <InfoAbout info={"EXPERIENCE"} description={"3 years"} />
             <InfoAbout
@@ -53,8 +66,8 @@ export default function About() {
               info={"LANGUAGES"}
               description={"Spanish, English, Portuguese"}
             />
-          </section>
-        </section>
+          </div>
+        </div>
       </section>
 
       {/* Information About */}
@@ -84,6 +97,6 @@ export default function About() {
       <section className=" mb-5 mt-10 ">
         <SocialNetwork />
       </section>
-    </div>
+    </>
   );
 }

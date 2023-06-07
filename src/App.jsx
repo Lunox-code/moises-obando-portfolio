@@ -20,7 +20,7 @@ function App() {
       <main>
         {activePage === "Home" && <Home />}
         {activePage === "About" && <About />}
-        {activePage === "Projects" && <Portfolio />}
+        {activePage === "Portfolio" && <Portfolio />}
       </main>
       <footer></footer>
     </>

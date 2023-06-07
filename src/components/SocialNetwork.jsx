@@ -9,16 +9,24 @@ const SocialNetwork = () => {
         href="https://www.linkedin.com/in/moises-obando/"
         target="_blank"
         rel="noreferrer"
+        className="hover:scale-125"
       >
         <img src={LinkedIn} alt="LinkedIn" className="w-10 md:w-14" />
       </a>
-      <a href="https://github.com/Lunox-code" target="_blank" rel="noreferrer">
+
+      <a
+        href="https://github.com/Lunox-code"
+        target="_blank"
+        rel="noreferrer"
+        className="hover:scale-125"
+      >
         <img src={GitHub} alt="GitHub" className=" w-10 md:w-14 " />
       </a>
       <a
         href="https://www.instagram.com/lunox.code/"
         target="_blank"
         rel="noreferrer"
+        className="hover:scale-125"
       >
         <img src={Instagram} alt="Instagram" className=" w-10 md:w-14 " />
       </a>

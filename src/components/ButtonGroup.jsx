@@ -1,22 +1,22 @@
 import PropTypes from "prop-types";
 
-const ButtonGroup = ({ onButtonClick1, onButtonClick2, name1, name2 }) => {
+const ButtonGroup = ({ onButtonCV, onButtonGmail, cv, gmail }) => {
   return (
     <div>
-      {onButtonClick1 && (
+      {onButtonCV && (
         <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-3 my-3 py-3 w-40 md:w-48 md:py-4 rounded-full"
-          onClick={onButtonClick1}
+          className="border border-blue-500 hover:bg-blue-700 hover:text-white text-blue-500 font-bold mx-3 my-3 py-3 w-40 md:w-48 md:py-4 rounded-full bg-transparent"
+          onClick={onButtonCV}
         >
-          {name1}
+          {cv}
         </button>
       )}
-      {onButtonClick2 && (
+      {onButtonGmail && (
         <button
-          className="bg-green-500 hover:bg-green-700 text-white font-bold mx-3 my-3 py-3 w-40 md:w-48 md:py-4 rounded-full"
-          onClick={onButtonClick2}
+          className="border border-blue-500 hover:bg-blue-700 hover:text-white text-blue-500 font-bold mx-3 my-3 py-3 w-40 md:w-48 md:py-4 rounded-full bg-transparent"
+          onClick={onButtonGmail}
         >
-          {name2}
+          {gmail}
         </button>
       )}
     </div>
@@ -24,10 +24,10 @@ const ButtonGroup = ({ onButtonClick1, onButtonClick2, name1, name2 }) => {
 };
 
 ButtonGroup.propTypes = {
-  onButtonClick1: PropTypes.func,
-  onButtonClick2: PropTypes.func,
-  name1: PropTypes.string,
-  name2: PropTypes.string,
+  onButtonCV: PropTypes.func,
+  onButtonGmail: PropTypes.func,
+  cv: PropTypes.string,
+  gmail: PropTypes.string,
 };
 
 export default ButtonGroup;
