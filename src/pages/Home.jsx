@@ -34,7 +34,7 @@ export default function Home() {
               <span className=" font-bold text-2xl text-blue-600">{" />"}</span>
             </h1>
             <h2 className=" text-3xl ">I AM MOISES OBANDO</h2>
-            <p className=" text-gray-300 ">
+            <p className=" text-gray-400 ">
               I am a Front End Developer based in Rio de Janeiro, Brazil. With a
               passion for technology, I create immersive and stunning web
               applications through carefully crafted code and user-centric

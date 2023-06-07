@@ -5,7 +5,7 @@ export const InfoAbout = ({ info, description, wa, email, onButtonGmail }) => {
     <>
       <div>
         <h2 className=" font-bold mt-2 ">{info}</h2>
-        <p className=" text-gray-300 mb-2 ">{description}</p>
+        <p className=" text-gray-400 mb-2 ">{description}</p>
         <a
           href="https://wa.me/573146252639?text=¡Hola,%20Moises!%20Me%20gustaría%20ponerme%20en%20contacto%20contigo."
           target="_blank"
@@ -18,7 +18,7 @@ export const InfoAbout = ({ info, description, wa, email, onButtonGmail }) => {
           onClick={onButtonGmail}
           target="_blank"
           rel="noopener noreferrer"
-          className=" hover:font-bold "
+          className=" text-gray-400 hover:font-bold "
         >
           {email}
         </a>

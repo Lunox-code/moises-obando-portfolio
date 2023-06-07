@@ -33,21 +33,49 @@ export default function Portfolio() {
           />
         </div>
 
+        {/* Sub Title */}
+        <div className=" mt-10">
+          <p className=" text-center font-bold ">
+            A few recent design and coding projects
+          </p>
+        </div>
+
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 m-10 gap-5 justify-center items-center">
           <div>
-            <Cards url={casino} nameproject={"CASINO"} />
+            <Cards
+              url={casino}
+              nameproject={"CASINO"}
+              description={
+                "A sophisticated casino platform for placing bets on your favorite games."
+              }
+            />
           </div>
           <div>
-            <Cards url={afiliados} nameproject={"AFILIADOS WEBSITE"} />
+            <Cards
+              url={afiliados}
+              nameproject={"AFILIADOS WEBSITE"}
+              description={
+                "An affiliate LATAM website for online sports betting platforms."
+              }
+            />
           </div>
           <div>
-            <Cards url={rickandmorty} nameproject={"RICK & MORTY"} />
+            <Cards
+              url={rickandmorty}
+              nameproject={"RICK & MORTY"}
+              description={
+                "Embark on a captivating journey through the fascinating universe of this beloved animated series as you explore character profiles seamlessly connected to our API."
+              }
+            />
           </div>
           <div>
             <Cards
               url={portfoliooldversion}
               nameproject={"OLD PORTFOLIO VERSION"}
+              description={
+                "Explore my past work and witness the fusion of creativity, technical prowess, and attention to detail that sets me apart as a front-end developer."
+              }
             />
           </div>
         </div>

@@ -33,9 +33,9 @@ export default function About() {
         </figure>
 
         {/* Sección del contenido */}
-        <div className=" order-2 md:order-1 space-y-4 mt-10 mb-5 md:mt-0 md:space-y-6 md:mr-10 text-center leading-normal tracking-tight ">
+        <div className=" order-2 md:order-1 space-y-7 mt-10 mb-5 md:mt-0 md:space-y-6 md:mr-10 text-center leading-normal tracking-tight ">
           {/* Sección del I AM */}
-          <div className="space-y-3 ">
+          <div className="space-y-4 ">
             <h1>
               <span className=" font-bold text-2xl text-blue-600">{"< "}</span>
               ABOUT ME
@@ -47,7 +47,7 @@ export default function About() {
           </div>
 
           {/* Information About */}
-          <div className=" grid grid-cols-2 ">
+          <div className=" grid grid-cols-2">
             <InfoAbout info={"NAME"} description={"Moisés Obando"} />
             <InfoAbout info={"AGE"} description={"30 years old"} />
             <InfoAbout info={"WHATSAPP"} wa={"+57 314-6252639"} />
