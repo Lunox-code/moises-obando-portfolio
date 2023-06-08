@@ -1,11 +1,14 @@
 import ButtonGroup from "../components/ButtonGroup";
 import { Cards } from "../components/Cards";
 import SocialNetwork from "../components/SocialNetwork";
+import CV from "../assets/CV/FrontEnd-MoisesObando.pdf";
 
 export default function Portfolio() {
-  // Cambiar esto
   const handleDownloadCVClick = () => {
-    console.log("Botón 1 clickeado");
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "FrontEnd-MoisesObando.pdf";
+    link.click();
   };
   const handleGetInTouchClick = () => {
     const email = "lunox.code@gmail.com";

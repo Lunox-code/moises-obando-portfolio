@@ -74,7 +74,10 @@ export default function About() {
       <section className=" mt-10 ">
         <h1 className=" text-center text-2xl font-bold">SKILLS</h1>
         <div className=" grid grid-cols-2 p-5 ">
-          <Skills skillname={"React JS"} percentage={percentageReactJS} />
+          <Skills
+            skillname={"React JS / Vite"}
+            percentage={percentageReactJS}
+          />
           <Skills skillname={"HTML 5"} percentage={percentageHTML} />
           <Skills skillname={"CSS"} percentage={percentageCSS} />
           <Skills skillname={"JavaScript"} percentage={percentageJavaScript} />
